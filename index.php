@@ -9,8 +9,8 @@
 
     <?php
     if (isset($_POST["height"]) && isset($_POST["weight"])) {
-        $weight = (int) $_POST["weight"];
-        $height = (int) $_POST["height"];
+        $weight =  $_POST["weight"];
+        $height =  $_POST["height"];
         $bmi = $weight/($height*$height);
         echo "Chỉ sô BMI là : " . $bmi;
     }
